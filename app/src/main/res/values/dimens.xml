@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="min_gap">8dp</dimen>
+    <dimen name="max_gap">24dp</dimen>
+    <dimen name="medium_gap">16dp</dimen>
+    <dimen name="max_gap_card">125dp</dimen>
+    <dimen name="medium_text_gap">16sp</dimen>
+    <dimen name="max_text_gap">24sp</dimen>
+    <dimen name="min_text_gap">8sp</dimen>
+    <dimen name="img_width">145dp</dimen>
+    <dimen name="img_heigth">80dp</dimen>
+</resources>
