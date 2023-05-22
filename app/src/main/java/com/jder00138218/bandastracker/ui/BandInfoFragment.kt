@@ -1,4 +1,4 @@
-package com.jder00138218.bandastracker
+package com.jder00138218.bandastracker.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

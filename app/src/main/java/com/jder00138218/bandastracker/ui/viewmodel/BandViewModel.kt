@@ -24,6 +24,11 @@ class BandViewModel(val bandRepository: BandRepository): ViewModel() {
     // Clear Data, Status, Validate Data
 
     fun createband(){
+
+        if(!validateData()){
+            status.value = WRONG_INFORMATION
+            return
+        }
         val band = BandModel(
             name.value!!,
             genre.value!!,
@@ -32,6 +37,7 @@ class BandViewModel(val bandRepository: BandRepository): ViewModel() {
 
         addBand(band)
         clearData()
+        status.value = BAND_CREATED
     }
 
 
@@ -69,7 +75,7 @@ class BandViewModel(val bandRepository: BandRepository): ViewModel() {
             }
         }
 
-        const val MOVIE_CREATED = "Band Created"
+        const val BAND_CREATED = "Band Created"
         const val WRONG_INFORMATION = "Wrong Information"
         const val INACTIVE =  "Inactive"
     }

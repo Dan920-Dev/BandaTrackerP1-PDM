@@ -1,4 +1,4 @@
-package com.jder00138218.bandastracker
+package com.jder00138218.bandastracker.ui.list.recyclerview
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,9 +10,9 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.jder00138218.bandastracker.R
 import com.jder00138218.bandastracker.data.models.BandModel
 import com.jder00138218.bandastracker.databinding.FragmentListBandBinding
-import com.jder00138218.bandastracker.ui.list.recyclerview.BandRecyclerViewAdapter
 import com.jder00138218.bandastracker.ui.viewmodel.BandViewModel
 
 class ListBandFragment : Fragment() {

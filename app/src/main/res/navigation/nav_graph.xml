@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/listBandFragment"
-        android:name="com.jder00138218.bandastracker.ListBandFragment"
+        android:name="com.jder00138218.bandastracker.ui.list.recyclerview.ListBandFragment"
         android:label="ListBandFragment" >
         <action
             android:id="@+id/action_listBandFragment_to_bandInfoFragment"
@@ -17,10 +17,10 @@
     </fragment>
     <fragment
         android:id="@+id/bandInfoFragment"
-        android:name="com.jder00138218.bandastracker.BandInfoFragment"
+        android:name="com.jder00138218.bandastracker.ui.BandInfoFragment"
         android:label="BandInfoFragment" />
     <fragment
         android:id="@+id/newBandFragment"
-        android:name="com.jder00138218.bandastracker.NewBandFragment"
+        android:name="com.jder00138218.bandastracker.ui.create.NewBandFragment"
         android:label="NewBandFragment" />
 </navigation>
