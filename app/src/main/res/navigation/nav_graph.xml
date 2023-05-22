@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listBandFragment">
+
+    <fragment
+        android:id="@+id/listBandFragment"
+        android:name="com.jder00138218.bandastracker.ListBandFragment"
+        android:label="ListBandFragment" >
+        <action
+            android:id="@+id/action_listBandFragment_to_bandInfoFragment"
+            app:destination="@id/bandInfoFragment" />
+        <action
+            android:id="@+id/action_listBandFragment_to_newBandFragment"
+            app:destination="@id/newBandFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bandInfoFragment"
+        android:name="com.jder00138218.bandastracker.BandInfoFragment"
+        android:label="BandInfoFragment" />
+    <fragment
+        android:id="@+id/newBandFragment"
+        android:name="com.jder00138218.bandastracker.NewBandFragment"
+        android:label="NewBandFragment" />
+</navigation>

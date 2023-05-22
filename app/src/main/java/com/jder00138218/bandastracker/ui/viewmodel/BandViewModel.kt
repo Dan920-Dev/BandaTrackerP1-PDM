@@ -14,6 +14,7 @@ class BandViewModel(val bandRepository: BandRepository): ViewModel() {
     var name = MutableLiveData("")
     var genre = MutableLiveData("")
     var musical = MutableLiveData("")
+    var status = MutableLiveData("")
 
 
 
@@ -22,15 +23,29 @@ class BandViewModel(val bandRepository: BandRepository): ViewModel() {
 
     // Clear Data, Status, Validate Data
 
-    fun createCar(){
+    fun createband(){
         val band = BandModel(
-           name.value!!,
+            name.value!!,
             genre.value!!,
             musical.value!!
         )
 
         addBand(band)
         clearData()
+    }
+
+
+    private fun validateData(): Boolean {
+        when{
+           name.value.isNullOrEmpty() -> return false
+            genre.value.isNullOrEmpty() -> return false
+            musical.value.isNullOrEmpty() -> return false
+        }
+        return true
+    }
+
+    fun clearStatus(){
+        status.value = INACTIVE
     }
 
     fun clearData() {
@@ -53,5 +68,9 @@ class BandViewModel(val bandRepository: BandRepository): ViewModel() {
                 BandViewModel(app.bandsRepository)
             }
         }
+
+        const val MOVIE_CREATED = "Band Created"
+        const val WRONG_INFORMATION = "Wrong Information"
+        const val INACTIVE =  "Inactive"
     }
 }
