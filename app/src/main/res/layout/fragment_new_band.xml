@@ -29,12 +29,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/name_of_band_EditText"
+
             android:layout_marginBottom="@dimen/max_gap">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/brand_ET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/white"
                 android:text="@={viewmodel.name}"
                 />
 
@@ -51,6 +53,7 @@
                 android:id="@+id/model_ET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/white"
                 android:text="@={viewmodel.genre}"
                 />
 
@@ -67,6 +70,7 @@
                 android:id="@+id/year_ET"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/white"
                 android:text="@={viewmodel.musical}"
 
                 />

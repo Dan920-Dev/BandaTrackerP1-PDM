@@ -16,7 +16,7 @@ import com.jder00138218.bandastracker.ui.viewmodel.BandViewModel
 class NewBandFragment : Fragment() {
     private lateinit var binding : FragmentNewBandBinding
 
-    private lateinit var  buttonAdd : FloatingActionButton
+    private lateinit var  buttonAdd2 : FloatingActionButton
 
     private val bandViewModel: BandViewModel by activityViewModels {
         BandViewModel.Factory
@@ -36,13 +36,13 @@ class NewBandFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        buttonAdd = view.findViewById(R.id.addButton)
+        buttonAdd2 = view.findViewById(R.id.addButton)
 
-        buttonAdd.setOnClickListener {
-            // bandViewModel.createband()
+
+
             observeStatus()
             setViewModel()
-        }
+
 
     }
 
